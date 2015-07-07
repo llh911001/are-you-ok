@@ -32,17 +32,9 @@ gulp.task('js', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('src/index.jade', function () {
-    gulp.start(['jade'])
-  })
-
-  gulp.watch('src/src/main.css', function () {
-    gulp.start(['css'])
-  })
-
-  gulp.watch('src/js/main.js', function () {
-    gulp.start(['js'])
-  })
+  gulp.watch('src/index.jade', ['jade'])
+  gulp.watch('src/src/main.css', ['css'])
+  gulp.watch('src/js/main.js', ['js'])
 })
 
 gulp.task('default', ['jade', 'css', 'js'])
