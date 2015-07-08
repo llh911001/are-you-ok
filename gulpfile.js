@@ -33,7 +33,7 @@ gulp.task('js', function () {
 
 gulp.task('watch', function () {
   gulp.watch('src/index.jade', ['jade'])
-  gulp.watch('src/src/main.css', ['css'])
+  gulp.watch('src/css/main.css', ['css'])
   gulp.watch('src/js/main.js', ['js'])
 })
 
