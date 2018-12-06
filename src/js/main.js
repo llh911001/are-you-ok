@@ -26,7 +26,7 @@ $(function () {
       return {name: value, preload: true}
     }),
     volume: 0.5,
-    path: 'http://7xir1p.com1.z0.glb.clouddn.com/audio/',
+    path: 'assets/audio/',
     multiplay: true,
     preload: true
   })

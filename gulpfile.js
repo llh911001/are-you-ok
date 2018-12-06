@@ -31,10 +31,16 @@ gulp.task('js', function () {
 
 })
 
+gulp.task('assets', function () {
+  return gulp.src(['assets/**/*'])
+    .pipe(gulp.dest('dist/assets'))
+
+})
+
 gulp.task('watch', function () {
   gulp.watch('src/index.jade', ['jade'])
   gulp.watch('src/css/main.css', ['css'])
   gulp.watch('src/js/main.js', ['js'])
 })
 
-gulp.task('default', ['jade', 'css', 'js'])
+gulp.task('default', ['jade', 'css', 'js', 'assets'])
